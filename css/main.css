@@ -30,6 +30,10 @@ a {
 .header__nav a:active {
   color: #ed6e2f;
 }
+.header__nav > li:first-child a {
+  color: #ed6e2f;
+}
+.header__nav > 
 .header__logo:hover, 
 .header__logo:active {
   opacity: 0.5;
@@ -39,6 +43,9 @@ a {
 .full-hero {
   background-color: #c7dbfc;
   height: 50vh;
+}
+.full-hero:hover {
+  background-color: #c1fcf4;
 }
 
 /* SOCIAL STYLES */
