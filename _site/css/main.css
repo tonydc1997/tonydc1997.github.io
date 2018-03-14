@@ -9,6 +9,13 @@ h1 {
 a {
   color: rgba(22, 99, 199, 0.8);
 }
+h2 ~ p {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 1em auto 0;
+  max-width: 70%;
+  text-align: center;
+}
 
 /* HEADER STYLES */
 .header__nav {
@@ -29,6 +36,16 @@ a {
 .header__nav a:hover,
 .header__nav a:active {
   color: #ed6e2f;
+}
+.header__nav > li:first-child a {
+  color: #ed6e2f;
+}
+.header__nav > li:first-child a:hover {
+  color: #000;
+}
+.header__nav > li ~ li {
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  padding-left: 1em;
 }
 .header__logo:hover, 
 .header__logo:active {
