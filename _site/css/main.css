@@ -1,10 +1,10 @@
 /* GLOBAL STYLES */
-body{
-  font-family: Helvetica, Arial, sans-serif;
-}
 html {
   box-shadow: 0 0 0 30px #000 inset;
   padding: 0 30px;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
 }
 h1 {
   font-size: 7vw;
@@ -41,12 +41,12 @@ h2 ~ p {
   text-align: center;
   width: 10vh;
 }
-.header__logo img {
-  width: 4.3vh;
-}
 .header__logo:hover, 
 .header__logo:active {
   background-color: #ed6e2f;
+}
+.header__logo img {
+  width: 4.3vh;
 }
 .header__nav {
   float: right;
@@ -57,18 +57,18 @@ h2 ~ p {
   margin-left: 1em;
 }
 .header__nav > li ~ li {
-  border-left: 1px solid rgba(250, 250, 250, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
   padding-left: 1em;
 }
-.header__nav  a {
+.nav__links a {
   color: #fff;
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
 }
-.header__nav a:hover,
-.header__nav a:active {
+.nav__links a:hover,
+.nav__links a:active {
   color: #ed6e2f;
 }
 .header__nav > li:first-child a {
@@ -94,6 +94,13 @@ h2 ~ p {
 }
 .footer h3 span {
   color: #aaa
+}
+.footer__nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+.footer__nav a {
+  color: #ccc:
 }
 
 /* HERO STYLES */
@@ -145,12 +152,11 @@ h2 ~ p {
 }
 .bio-box {
   border: 1px solid black;
-  border-color: black black red;
   box-sizing: border-box;
   float: left;
   font-size: 1rem;
   margin: 40px 1% 0;
-  padding: 0 2% 2%;
+  padding: 2%;
   width: 23%;
 }
 .bio-box h3 {
@@ -168,7 +174,6 @@ h2 ~ p {
 }
 .bio-copy {
   font-size: 1em;
-  line-height: 1.5;
 }
 .bio-copy a {
   color: green;
