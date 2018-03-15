@@ -106,10 +106,13 @@ h2 ~ p {
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  height: 50vh;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  padding-top: 10vh;
 }
-.full-hero:hover {
-  background-color: #c1fcf4;
+.hero-home {
+  background-image: url(/images/shark.jpg);
 }
 
 /* SOCIAL STYLES */
