@@ -451,6 +451,11 @@ h2 ~ p {
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 600px) {
+  .half-hero {
+    display: none;
+  }
+}
 @media (max-width: 800px) {
   html {
     box-shadow: none;
