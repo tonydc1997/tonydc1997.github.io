@@ -184,6 +184,12 @@ h2 ~ p {
   padding-right: 0;
 }
 
+/* MOBILE MENU */
+.mobile-menu-check,
+.show-mobile-menu {
+  display: none;
+}
+
 /* FOOTER STYLES */
 .footer {
   background-color: #000;
@@ -206,7 +212,7 @@ h2 ~ p {
   margin: 2em 1em 0;
 }
 .footer__nav a {
-  color: #ccc:
+  color: #ccc;
 }
 
 /* COLUMN STYLES */
@@ -565,6 +571,24 @@ h2 ~ p {
   }
   .header__logo {
     left: auto;
+  }
+
+  /* MOBILE MENU */
+  .show-mobile-menu {
+    display: block;
+    float: right;
+    margin-top: 1.5vh;
+    padding: 1.5em;
+    position: relative;
+  }
+  .header__nav {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .mobile-menu-check:checked ~ .header__nav {
+    max-height: 1000px;
   }
 
   /* HOME STYLES */
